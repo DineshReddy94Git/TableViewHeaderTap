@@ -18,6 +18,9 @@
 		BD8F8E5025D10FF600FAB218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD8F8E4F25D10FF600FAB218 /* Assets.xcassets */; };
 		BD8F8E5325D10FF600FAB218 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8F8E5125D10FF600FAB218 /* LaunchScreen.storyboard */; };
 		BD8F8E6B25D1130D00FAB218 /* ListTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8F8E6A25D1130D00FAB218 /* ListTableViewVC.swift */; };
+		BDE990C525D13B41005E7DC7 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = BDE990C425D13B41005E7DC7 /* Contents.json */; };
+		BDE990C825D13BA8005E7DC7 /* JsonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE990C725D13BA8005E7DC7 /* JsonManager.swift */; };
+		BDE990CB25D13C39005E7DC7 /* ContentsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE990CA25D13C39005E7DC7 /* ContentsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		BD8F8E5225D10FF600FAB218 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD8F8E5425D10FF600FAB218 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD8F8E6A25D1130D00FAB218 /* ListTableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewVC.swift; sourceTree = "<group>"; };
+		BDE990C425D13B41005E7DC7 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		BDE990C725D13BA8005E7DC7 /* JsonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonManager.swift; sourceTree = "<group>"; };
+		BDE990CA25D13C39005E7DC7 /* ContentsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				BD160B8525D1177700CC3D5F /* ViewExtensions.swift */,
+				BDE990C425D13B41005E7DC7 /* Contents.json */,
+				BDE990C725D13BA8005E7DC7 /* JsonManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -158,6 +166,7 @@
 		BD8F8E6325D112B300FAB218 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BDE990CA25D13C39005E7DC7 /* ContentsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -248,6 +257,7 @@
 				BD160B7625D116A500CC3D5F /* ListTVCell.xib in Resources */,
 				BD8F8E5025D10FF600FAB218 /* Assets.xcassets in Resources */,
 				BD8F8E4E25D10FF500FAB218 /* Main.storyboard in Resources */,
+				BDE990C525D13B41005E7DC7 /* Contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +270,9 @@
 			files = (
 				BD160B6E25D1139900CC3D5F /* ListHeaderTVCell.swift in Sources */,
 				BD160B7525D116A500CC3D5F /* ListTVCell.swift in Sources */,
+				BDE990C825D13BA8005E7DC7 /* JsonManager.swift in Sources */,
 				BD8F8E6B25D1130D00FAB218 /* ListTableViewVC.swift in Sources */,
+				BDE990CB25D13C39005E7DC7 /* ContentsModel.swift in Sources */,
 				BD8F8E4725D10FF500FAB218 /* AppDelegate.swift in Sources */,
 				BD160B8625D1177700CC3D5F /* ViewExtensions.swift in Sources */,
 				BD8F8E4925D10FF500FAB218 /* SceneDelegate.swift in Sources */,
