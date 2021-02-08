@@ -10,7 +10,7 @@ import Foundation
 class JsonManager: NSObject {
     
     static let sharedInstance = JsonManager()
-func getSideMenuItemResponse(onSuccess: @escaping([Any]?) -> ())
+func getContentsResponse(onSuccess: @escaping([Any]?) -> ())
 {
     do {
         if let file = Bundle.main.url(forResource: "Contents", withExtension: "json") {

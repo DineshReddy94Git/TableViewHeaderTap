@@ -21,6 +21,8 @@ class ListTableViewVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.tintColor = .red
+        navigationController?.navigationBar.backgroundColor = .red
         TableViewUI()
         getContentData()
     }
@@ -124,6 +126,7 @@ extension ListTableViewVC : UITableViewDelegate, UITableViewDataSource {
 extension ListTableViewVC{
     
     fileprivate func TableViewUI() {
+        listTableView.bounces = false
         listTableView.delegate = self
         listTableView.dataSource = self
         
@@ -142,7 +145,7 @@ extension ListTableViewVC{
     }
     
     func getContentData() {
-        JsonManager.sharedInstance.getSideMenuItemResponse(onSuccess: {json in
+        JsonManager.sharedInstance.getContentsResponse(onSuccess: {json in
             let array = json as? [JSON]
             for dictionary in array! {
                 guard let Menu_Items = ContentsModel(json: dictionary) else { continue }
